@@ -1,0 +1,201 @@
+html {scroll-behavior: smooth; }
+
+/* menu */
+.menu {display: flex;  position: fixed; width: 1920px; height: 50px;
+    z-index: 1; top: 0px; left: 0px; 
+    padding-left: 20px; background-color: white;
+    opacity: 0.5;   
+    float: left;
+}
+
+div li {list-style-type: none; 
+    display: inline-block; 
+    text-align: center; 
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 208px;
+    font-weight: bold;
+    
+}
+
+.fromLeft {text-decoration: none;
+    color: black
+}
+
+.fromLeft:hover {cursor: pointer;}
+
+.fromLeft:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px rgb(71, 71, 71);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.fromLeft:hover:after { transform: scaleX(1); }
+
+.fromLeft:after {
+    transform-origin: 0% 50%;
+}
+
+
+
+/* top */
+.All {width: 1920px; height: 5000px;  float: left;}
+
+.top1 {width: 1920px; height: 1500px;float: left;}
+
+.font_top {width: 1250px; height: 400px; font-family: 'Noto Sans KR', sans-serif; float: left;  margin-left: 400px; margin-top: 0px;}
+
+#font_top2 {color: rgb(71, 71, 71); font-size: 24px; font-weight: bold; float: left; margin-top: 80px;}
+
+.font_top3 {color: gray; margin-left: -123px; margin-top:10px ;float:left; letter-spacing: 0; font-size: 18px; margin-top: 100px;}
+
+.font_img {float: right; margin-top: 50px;}
+
+
+/* keyword */
+
+.keyword {width:1250px; height: 1080px; float: left; margin-left: 400px; margin-top: 100px; font-family: 'Noto Sans KR', sans-serif;}
+#k_font {color: rgb(71, 71, 71); font-size: 24px; font-weight: bold; float: left;  height: 15px; margin-top: 50px; }
+
+#concept {color: gray; font-size: 18px;  font-family: 'Noto Sans KR', sans-serif; padding-left: 35px; margin-top: 100px}
+
+.k_list { float: left; width: 1200px; height: 250px;  margin-left: 35px; margin-top: 60px;} 
+.k_li01 {width: 600px; height: 100px;  float: left; margin-top:70px; } 
+
+.hoverList {border-radius: 5px; width:150px; height: 30px; border: gray 3px solid; float: left; font-size: 18px;
+                font-family: 'Noto Sans KR', sans-serif; font-weight: bold; text-align: center; display: table-cell; padding-top: 3px; transition: 0.5s;}
+.hoverList:hover {background-color: gray; color: white; font-family: 'Noto Sans KR', sans-serif; font-weight: bold;}
+
+#line {width: 200px; height: 0px; float:left; background-color:black; border: black solid; margin-top: 45px;
+      margin-top: 118px; border-radius: 20px;}
+#kwang {float: left; margin-left: 35px; margin-top: 15px;}
+            
+.hoverList2 {border-radius: 5px; width:150px; height: 30px; border: rgb(71, 71, 71) 3px solid; float: left; font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif; font-weight: bold; text-align: center; padding-top: 3px;  transition: 0.5s;}
+.hoverList2:hover {background-color: rgb(71, 71, 71); color: white; font-family: 'Noto Sans KR', sans-serif; font-weight: bold;}
+
+.hoverList3 {border-radius: 5px; width:150px; height: 30px; border: black 3px solid; float: left; font-size: 18px;  transition: 0.5s;
+    font-family: 'Noto Sans KR', sans-serif; font-weight: bold; text-align: center; display: table-cell; padding-top: 3px; margin-top: 27px; }
+.hoverList3:hover {background-color: black; color: white; font-family: 'Noto Sans KR', sans-serif; font-weight: bold;}
+
+/*concept*/
+
+.concept {
+    width: 1250px;
+    height: 900px;
+    float: left;
+    margin-left: 400px;
+    margin-top: 150px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#conceptFont {
+    color: rgb(71, 71, 71); 
+    font-size: 24px;
+    width: 245px;
+    margin-top: 50px;
+}
+
+#c_color {float: left; margin-top: 80px; margin-left: 20px;}
+#c_logo {float: left; margin-top: 150px; margin-left: 70px;}
+
+
+/*mokeUp*/
+
+.GALLARY {width:1250px; 
+    height: 910px; 
+    float: left; 
+    margin-left: 400px;
+    margin-top: 100px; 
+    font-family: 'Noto Sans KR', sans-serif;}
+
+     #GALLARY_font {color: rgb(71, 71, 71); 
+    font-size: 24px; 
+    font-weight: bold;
+    float: left;
+    width: 140px; 
+    margin-top: 50px;}
+
+.box {
+    width: 950px;
+    height: 650px;
+    margin-top: 150px;
+    margin-left: 180px;
+}
+
+
+/* brand */
+
+.brand {
+    width: 1250px;
+    height:5350px;
+    float: left;
+    margin-left: 400px;
+    
+}
+
+#Bfont {
+    font-size: 24px;
+    font-weight:bold;
+    width: 170px;
+    color:rgb(71, 71, 71);
+    margin-top: 50px;
+}
+
+.card {
+    width: 800px;
+    height: 700px;
+    background-color: rosybrown;
+    margin-top: 100px;
+    margin-left: 230px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px 0px;
+    transition: 0.5s;
+}
+
+#cardClick {
+    width: 800px;
+    height: 700px;
+    background-color: rosybrown;
+    transition: 0.5s;
+}
+
+#cardClick:hover {
+        opacity: 0.5;
+} 
+
+
+.card > h2 {
+    position: absolute; 
+    margin-top: 300px;
+    margin-left: 300px;
+    font-size: 50px;
+    color: black;
+    opacity: 0.5;
+
+}
+
+.mockUp {
+    width: 1250px;
+    height: 4246px;
+    background-color: yellow;
+    border: 5px solid white;
+    margin-top: 150px;
+    margin-left: -5px;
+    box-shadow: 0px 1px 15px 0px;
+}
+
+.back {
+    float: left;
+    width: 300px;
+    height: 20px;
+    color: black;
+    margin-top: 50px;
+    transition: 1s;
+}
+
+
+.back:hover {
+    font-size: 24px;
+}

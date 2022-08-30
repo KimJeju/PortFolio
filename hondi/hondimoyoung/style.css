@@ -1,0 +1,435 @@
+.wrap {width: 1900px; height: 6000px; background-color: rgb(186, 235, 255);margin-left: -10px; margin-top: -10px;}
+*{ transition: 0.5s; }
+
+html {scroll-behavior: smooth;}
+a:hover {
+    color: black;  text-decoration: none;  
+}
+
+a:visited {color: black;  text-decoration: none;  }
+a:link {color: black;  text-decoration: none;}
+
+
+/* menu */
+.menu {display: flex;  position: fixed; width: 1920px; height: 80px;
+    z-index: 1; top: 0px; left: 0px; 
+    padding-left: 20px; background-color: white;
+    opacity: 0.5;   
+    float: left;
+}
+
+div li {list-style-type: none; 
+    display: inline-block; 
+    text-align: center; 
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 208px;
+    font-weight: bold;
+    
+}
+
+.fromLeft {text-decoration: none;
+    color: black
+}
+
+.fromLeft:hover {cursor: pointer;}
+
+.fromLeft:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px rgb(71, 71, 71);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.fromLeft:hover:after { transform: scaleX(1); }
+
+.fromLeft:after {
+    transform-origin: 0% 50%;
+}
+
+/* 이미지슬라이드*/
+.title {
+    width: 1900; 
+    height: 870px; 
+    background-color: black;
+}
+
+
+/* 오버뷰 */
+.overView {
+    width: 1590px;
+    height: 600px;
+
+    float:left;
+    margin-left: 250px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 50px;
+    
+} 
+
+.over {font-weight: bold;
+    font-size: 30px;
+    color: black;
+    padding-top: 80px;
+}
+.text { color: rgb(71,71,71);
+        font-size: 24px;
+        margin-left: 50px;
+        margin-top: -15px;
+        line-height: 45px;
+}
+
+#hondImg {float: right;
+          margin-right: 200px;
+          margin-top: -300px;
+}
+
+
+/* KEYWORD */
+
+#keyWord {width: 1590px;
+          height: 1200px;
+         
+          float: left;
+          margin-left: 250px;
+          margin-top: 50px;
+          font-family: 'Nanum Gothic', sans-serif;
+          
+}
+
+.keyFont {font-weight: bold;
+          font-size: 30px;
+          color: black;
+          margin-top: 100px;
+}
+
+
+/* 왼쪽 서클 */
+.word_Sec {
+    width: 260px;
+    height: 800px;
+    margin-left: 220px;
+}
+
+
+#circle1 {
+    background-color: white;
+    width:250px;
+    height:250px;
+    border-radius:150px;
+    text-align:center;
+    margin:0 auto;
+    font-size:12px;
+    vertical-align:middle;
+    line-height:150px;
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+    
+    }
+#circle1:hover {color: black; background-color:wheat;}
+
+#circle2 {
+background-color: #7cb9d4;
+    width:250px;
+    height:250px;
+    border-radius:250px;
+    text-align:center;
+    margin:0 auto;
+    font-size:12px;
+    vertical-align:middle;
+    line-height:150px;
+    font-size: 34px;
+    font-weight: bold;
+    float: left;
+    margin-top: 10px;
+    }
+#circle2:hover {color: black; background-color:#2dace3;}
+
+#circle3 {
+    background-color: #3990c9;
+        width:250px;
+        height:250px;
+        border-radius:250px;
+        text-align:center;
+        margin:0 auto;
+        font-size:12px;
+        vertical-align:middle;
+        line-height:150px;
+        font-size: 34px;
+        font-weight: bold;
+        float: left;
+        margin-top: 10px;
+        }
+    #circle3:hover {color: black; background-color:#1a81c4;}
+
+/*가운데 서클*/
+.word_Sec2 {
+    width: 260px;
+    height: 800px;
+    margin-left: 630px;
+    margin-top: -700px;
+    float: left
+}
+
+
+#circle1_M {
+    background-color: white;
+    width:250px;
+    height:250px;
+    border-radius:150px;
+    text-align:center;
+    margin:0 auto;
+    font-size:12px;
+    vertical-align:middle;
+    line-height:150px;
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+    }
+#circle1_M:hover {color: black; background-color:wheat;}
+
+#circle2_M {
+background-color: #6f996c;
+    width:250px;
+    height:250px;
+    border-radius:250px;
+    text-align:center;
+    margin:0 auto;
+    font-size:12px;
+    vertical-align:middle;
+    line-height:150px;
+    font-size: 34px;
+    font-weight: bold;
+    float: left;
+    margin-top: 10px;
+    }
+#circle2_M:hover {color: black; background-color:#4da946;}
+
+#circle3_M {
+    background-color: #4f6c5e;
+        width:250px;
+        height:250px;
+        border-radius:250px;
+        text-align:center;
+        margin:0 auto;
+        font-size:12px;
+        vertical-align:middle;
+        line-height:150px;
+        font-size: 34px;
+        font-weight: bold;
+        float: left;
+        margin-top: 10px;
+        }
+    #circle3_M:hover {color: black; background-color:#056738;}
+
+/*오른쪽 서클*/
+
+.word_Sec3 {
+    width: 260px;
+    height: 800px;
+    margin-right: 300px;
+    margin-top: -600px;
+    float: right
+}
+
+
+#circle1_R {
+    background-color: white;
+    width:250px;
+    height:250px;
+    border-radius:150px;
+    text-align:center;
+    margin:0 auto;
+    font-size:12px;
+    vertical-align:middle;
+    line-height:150px;
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+    }
+#circle1_R:hover {color: black; background-color:wheat;}
+
+#circle2_R {
+background-color: #c9dff2;
+    width:250px;
+    height:250px;
+    border-radius:250px;
+    text-align:center;
+    margin:0 auto;
+    font-size:12px;
+    vertical-align:middle;
+    line-height:150px;
+    font-size: 34px;
+    font-weight: bold;
+    float: left;
+    margin-top: 10px;
+    }
+#circle2_R:hover {color: black; background-color:#a1c8e9;}
+
+#circle3_R {
+    background-color: #97adc0;
+        width:250px;
+        height:250px;
+        border-radius:250px;
+        text-align:center;
+        margin:0 auto;
+        font-size:12px;
+        vertical-align:middle;
+        line-height:150px;
+        font-size: 34px;
+        font-weight: bold;
+        float: left;
+        margin-top: 10px;
+        }
+    #circle3_R:hover {color: black; background-color:#718495;}
+
+
+
+/*concept*/
+
+#concept {width: 1590px;
+    height: 1400px;
+    float: left;
+    margin-left: 250px;
+    margin-top: 50px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#imgWrap {width: 1273px;
+          height: 882px;
+          
+
+} 
+
+.c_font {font-weight: bold;
+    font-size: 30px;
+    color: black;
+    padding-top: 80px;
+}
+
+.s_logo {float: left;
+        margin-left: 200px;
+}
+
+.colorWrap {
+    width: 1000px;
+    height:250px;
+    background-color:bisque;
+    float: left;
+    display: flex;
+    margin-left: 330px;
+    margin-top: -60px;
+}
+#color {margin-top: 20px;
+}
+    /*왼쪽 호버*/
+#c_hover {
+    background-color: none;
+    width: 350px;
+    height:250px;
+    margin-left: 0px;
+}
+#c_hover:hover {background-color: #1a81c4;}
+
+   /*가운데 호버*/
+   #c_hoverM {
+    background-color: none;
+    width: 350px;
+    height:250px;
+    float: left;
+}
+#c_hoverM:hover {background-color: #056738;}
+
+  
+/*오른쪽 호버*/
+
+#c_hoverR {
+    background-color: none;
+    width: 350px;
+    height:250px;
+    float: left;
+}
+#c_hoverR:hover {background-color: #c9dff2;}
+
+
+
+.font_c {text-align: center;
+         vertical-align: middle;
+         font-size: 34px;
+         font-weight: bold;
+         padding-top: 100px;
+}
+
+/* 사이트 */
+
+.site {
+    width: 1590px;
+          height: 1500px;
+       
+          float: left;
+          margin-left: 250px;
+          margin-top: 50px;
+          font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+.s_font {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    padding-top: 80px;
+}
+
+.hondiSite {
+    width: 949px;
+    height: 913px;
+    background-color: violet;
+    border: 5px solid white;
+    margin-left: 250px;
+    position: relative;
+    box-shadow: 1px 1px 15px 1px;
+    margin-top: 50px;
+
+}
+
+.hondiSite:hover {
+    opacity: 0.5;
+}
+
+.visited {
+
+    width: 949px;
+    height: 913px;
+
+}
+.visi {
+    position: absolute;
+    font-size: 150px;
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top:0px;
+    margin-left: 0px;
+    padding-top: 300px;
+    opacity: 0;
+    display: block;
+    width: 949px;
+    height: 913px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.visi:hover {
+    
+    opacity: 1;
+}
+
+.back {
+    color: black;
+    margin-top: 100px;
+}
+
+.back:hover {
+    font-size: 24px;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Full page scroll</title>
+	<link rel="stylesheet" type="text/css" href="full-page-scroll.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		.section1 {
+			background-color: #fde5d0;
+		}
+
+		.section2 {
+			background-color: #fabe77;
+		}
+
+		.section3 {
+			background-color: #fabe77;
+		}
+
+		.section4 {
+			background-color: #fabe77;
+		}
+
+		.section5 {
+			background-color: #fabe77;
+		}
+
+		.section6 {
+			background-color: #fabe77;
+		}
+
+	
+
+
+		section div {
+			font-family: 'Open Sans';
+			font-style: normal;
+			text-align: center;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		span {
+			font-size: 4em;
+			font-style: normal;
+			color: #fff;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		ul,
+		li {
+			list-style: none;
+		}
+
+		.slide {
+			height: 1080px;
+			overflow: hidden;
+		}
+
+		.slide ul {
+			width: calc(100% * 4);
+			display: flex;
+			animation: slide 15s infinite;
+		}
+
+		/* slide를 8초동안 진행하며 무한반복 함 */
+		.slide li {
+			width: calc(100% / 4);
+			height: 1023px;
+		}
+
+		.slide li:nth-child(1) {
+			background: #ffa;
+		}
+
+		.slide li:nth-child(2) {
+			background: #faa;
+		}
+
+		.slide li:nth-child(3) {
+			background: #afa;
+		}
+
+		.slide li:nth-child(4) {
+			background: #aaf;
+		}
+
+		@keyframes slide {
+			0% {
+				margin-left: 0;
+			}
+
+			/* 0 ~ 10  : 정지 */
+			10% {
+				margin-left: 0;
+			}
+
+			/* 10 ~ 25 : 변이 */
+			25% {
+				margin-left: -100%;
+			}
+
+			/* 25 ~ 35 : 정지 */
+			35% {
+				margin-left: -100%;
+			}
+
+			/* 35 ~ 50 : 변이 */
+			50% {
+				margin-left: -200%;
+			}
+
+			60% {
+				margin-left: -200%;
+			}
+
+			75% {
+				margin-left: -300%;
+			}
+
+			85% {
+				margin-left: -300%;
+			}
+
+			100% {
+				margin-left: 0;
+			}
+		}
+	</style>
+
+
+
+
+
+</head>
+
+<body>
+	<div id="main" class="scroll-container">
+		<section class="section1">
+			<div class="slide">
+				<ul>
+					<li><img src="../neonadul-i/img/slide/main.jpg"></li>
+					<li><img src="../neonadul-i/img/slide/slide_img01.jpg"></li>
+					<li><img src="../neonadul-i/img/slide/slide_img02.png.jpg"></li>
+					<li><img src="../neonadul-i/img/slide/slide_img03.png.jpg"></li>
+				</ul>
+			</div>
+		</section>
+		<section class="section2">
+			<div class="shadow-drop-center">
+				<img src="../neonadul-i/img/slide1.jpg">
+			</div>
+		</section>
+		<section class="section3">
+			<div class="shadow-drop-center">
+				<img src="../neonadul-i/img/slide2.jpg">
+			</div>
+		</section>
+		<section class="section4">
+			<div class="shadow-drop-center">
+				<img src="../neonadul-i/img/slide3.jpg">
+			</div>
+		</section>
+		<section class="section5">
+			<div class="imgPointVisi">
+			  <p class="tracking-in-expand"><a href="../neonadul-i/neonaduliSite/index.html">Click me</a></p>
+			  <img src="../neonadul-i/img/slide4.jpg"></a>
+			</div>
+		</section>
+		<section class="section6">
+			<div id="VisiPPT" class="shadow-drop-center">
+				<p class="tracking-in-expand"><a href="../neonadul-i/neonaduliPPT.pdf">LOOK UP PPT!</a></p>
+			  <img src="../neonadul-i/img/slide5.jpg">
+			</div>
+		</section>
+		<section class="section6">
+			<div id="VisiPPT" class="shadow-drop-center">
+				<p class="tracking-in-expand"><a href="../neonadul-i/Uisite.html">Click me</a></p>
+			  <img src="../neonadul-i/img/ui.jpg">
+			</div>
+
+		<a href="../index.html"><p class="back">Back to FonrtPage</p></a>	
+		</section>
+	
+	</div>
+
+	</section>
+
+	<script src="full-page-scroll.js"></script>
+	<script type="text/javascript">
+		new fullScroll({
+			displayDots: true,
+			dotsPosition: 'left',
+			animateTime: 0.7,
+			animateFunction: 'ease'
+		});
+	</script>
+</body>
+
+</html>

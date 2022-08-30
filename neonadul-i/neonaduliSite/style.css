@@ -1,0 +1,287 @@
+/*전체 설정*/
+html {scroll-behavior: smooth; }
+body {margin-left: 0px; 
+    margin-top: 0px; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 13px;
+    color: #676364;
+    width: 1900px
+}
+
+/*header !!배경색 지우고 마무리!! */
+header {position: fixed; 
+    top: 0px; 
+    left: 0px; 
+    width: 1900px; 
+    height: 100px;
+    z-index: 1;
+}
+.background {width: 1900px;
+    height: 100px; 
+    background-color: white;
+    /* background-image: linear-gradient(white, transparent);
+    mix-blend-mode: soft-light; */
+    position: absolute; 
+    top: 0px
+}
+.logoMenu {display: flex;
+    margin-left: 170px;
+    position: absolute; 
+    top: 0px
+}
+.logo {margin-top: 10px;
+    width: 800px
+}
+.menu {margin-left: 150px
+}
+header li {list-style-type: none; 
+    display: inline-block; 
+    text-align: center; 
+    font-size: 20px;
+    margin: 30px 50px 0px;
+}
+.fromLeft {text-decoration: none;
+    color: black
+}
+.fromLeft:hover {cursor: pointer;}
+.fromLeft:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #e27c37;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+.fromLeft:hover:after { transform: scaleX(1); }
+.fromLeft:after {
+    transform-origin: 0% 50%;
+}
+
+/*section*/
+#main img {width: 1900px;
+}
+
+/*section01_recommend !!배경색 다 빼고 마무리 & main color 정해지면 색 바꾸기!!*/
+.section_01 {width: 1900px; height: 920px;
+    background-image: url(section_01bg.jpg);
+    background-repeat: no-repeat; 
+    background-position: bottom; 
+    display: flex;
+}
+
+#image {width: 850px; 
+    margin: 80px 80px 0px}
+
+.s1_left {width: 600px; 
+    height: 600px; 
+    margin-top: 380px;
+    margin-left: 160px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.s1_left span {display: inline-block; 
+    width: 200px;
+}
+.s1_left span:hover {cursor: pointer; 
+    color:  #e27c37
+}
+.s1_right {margin-top: 210px; 
+    margin-left: 80px; 
+}
+#gyeong {position: relative; 
+    top: 20px; 
+    left: 70px;
+}
+#pohang {position: relative; 
+    top: 130px; 
+    left: 260px;
+}
+#duck {position: relative; 
+    top: 280px; 
+    left: 80px;
+}
+#jin {position: relative; 
+    top: 390px; 
+    left: 250px; 
+}
+
+/*top5*/
+
+.section_02 {width: 1900px; height: 980px;
+    background: url("section_02bg.png") no-repeat;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.s2_left {width: 930px; 
+    height: 910px; 
+    font-size: 20px;
+    color: black;
+    margin-top:50px;
+}
+
+.s2_left_01 {width:700px;
+    height:700px;
+    margin: 100px auto;
+    background-color:
+}
+
+.s2_left_name {
+    width:700px;
+    color:#55585d;
+    font:bold 40px 'sans-serif';
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.a {
+    display: flex;
+    font-size: 12px;
+}
+
+.a_01 {
+    overflow:hidden;
+}
+
+.a_01 > img {
+    width:95px;
+    height:95px;
+    display:block;
+    transition:all 0.6s;
+}
+
+.a_01:hover > img {
+    transform: scale(1.2);
+}
+
+.a div {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.b {
+    color:#353434;
+    font:bold 18px 'san-serif';
+    margin-left: 10px;
+}
+.b:hover {
+    cursor:pointer;
+}
+
+.b p {
+    font:bold 13px 'sans-serif';
+    color:#55585d;
+}
+
+.s2_right {width: 930px; 
+    height: 910px; 
+    font-size: 20px;
+    margin-top:35px;
+}
+.s2_right_top img {
+    width: 465px;
+    height: 465px;
+}
+
+.s2_right_top {
+}
+
+.s2_right_top_a,
+.s2_right_top_b {
+    width:465px;
+    height:465px;
+    float:left;
+    position:relative
+}
+#s2_dayText,
+#s2_nightText {position: absolute; 
+    top:50%; 
+    left: 50%; 
+    transform: translate( -50%, -50% ); 
+    font-size:80px;
+    font-family: 'Lobster', cursive; 
+    letter-spacing: -3px;
+    color:#425460}
+ 
+#s2_nightText{color:#e9dcdc}
+#s2_dayText:hover,
+#s2_nightText:hover {font-size: 90px;}
+
+.s2_right_bottom {
+    background-image: url(right_bottom_template.png);
+    background-repeat: no-repeat; 
+    width:930px;
+    height:465px;
+    float: left;
+}
+#s2_right_bottom_name {
+    width:230px;
+    height:50px;
+    position: absolute;
+    margin-left:50px;
+    margin-top:340px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.s2_right_bottom img {
+    width:930px;
+    height:465px;
+}
+
+/*REVIEW*/
+.section_03 {
+    height: 910px;
+    display: flex; 
+    justify-content: center;
+    background-color: #f5f4f3; 
+    padding-top: 70px}
+.s3_left {width: 750px;
+    height: 910px;
+}
+.s3_left h1 {text-align: center; 
+    font-size: 40px;}
+.s3_left h2 {font-size: 25px;}
+.s3_left h3 {font-size: 20px;}
+.s3_left h3:hover {cursor:pointer; color:#e27c37;}
+#imstaText {margin: 30px 40px 0px; font-family: 'Noto Serif KR', serif;}
+.instagram {display: flex;}
+.s3_right {width: 695px; 
+    height: 910px; 
+    margin: 100px 60px;
+}
+.news {margin-top: 30px;}
+.s3_right article {width: 600px;}
+.fontOrange,
+.fontGray {font-size: 18px;
+    margin: 0px 10px}
+.fontOrange {color: #e27c37;} 
+.fontGray {color: #767171;}
+.fontBlue {color: cornflowerblue; 
+    font-size: 10px}
+.flex {display: flex; margin: 20px 0px;}
+.hover {margin-top: 10px; font-weight: bold; }
+.hover:hover {cursor: pointer;}
+p {color: darkslategrey;
+    font-size: 12px;
+    margin-top: 5px;}
+.s3_rightTitle {display: flex; 
+    justify-content: space-between;
+    font-size: 23px; font-weight: bold;}
+.s3_rightTitle span {display: inline-block;}
+.line {width: 600px; 
+    height: 16px;
+    border-bottom: 2px solid #767171;}
+    
+/*footer*/
+
+footer {width: 1900px;
+    height: 100px;
+    display: flex;
+}
+
+footer div {
+    text-align: center;
+    margin: 50px auto;
+}

@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+/*all*/
+* {    /*전체 설정*/
+    margin:0;            /*전체 여백 없앰*/            
+    padding:0;           /*전체 여백 없앰*/
+    list-style:none;     /*ul li태그 앞에 서식 없애기*/
+}
+a {    /*a 태그 설정*/
+    color:inherit;            /*하이퍼링크 색상 없애기*/
+    text-decoration:none;     /*하이퍼링크 밑줄 없애기*/
+}
+
+/*wrap*/
+#wrap {
+    width:1200px;
+    height:700px;
+    margin:0 auto;        /*중앙정렬*/
+}
+
+/*header*/
+/*top_logo*/
+header {
+    width:1200px;
+    height:100px;
+    position:relative;  /*유형3 뒤에 배경만들기 위한 포지션*/
+	z-index:1;   /*아래 이미지 슬라이드보다 한단계 위에서 서브메뉴 슬라이드*/    
+}
+.top_logo {
+    width:200px;
+    height:100px;
+    float:left;
+    background-color:orange;
+}
+
+/*nav*/
+.nav {
+    width:1000px;
+    height:100px;
+    float:right;
+    background-color:orangered;
+}
+.nav>ul {
+    float:right;            /*nav안에 값들 오른쪽으로 밀기*/
+    margin-top:50px;        /*위에서 여백*/
+    margin-right:50px;      /*오른쪽 여백*/
+}
+.nav>ul>li {
+    float:left;            /*리스트 가로 정렬 (세로->가로)*/
+}
+.nav>ul>li>a {
+    width:200px;            /*리스트 가로크기*/
+    height:50px;            /*리스트 세로크기*/
+    line-height:50px;       /*세로값이랑 같이 하면 세로중앙정렬*/ 
+    text-align:center;      /*문자 중앙정렬*/
+    display:block;          /*위에 값들 블락스타일로 지정해주기*/
+    background-color:#8484ef;
+    color:white;
+    transition:0.5s;        /*마우스 올렸을때 색상 변경되는 시간, 좀더 부드럽게 꾸며줌, 없어도 됩니다*/
+}
+.nav>ul>li>a:hover {
+    background-color:#b6b6fd;    /*마우스 올렸을시 색변경*/
+}
+.submenu {
+    display:none;           /*제이쿼리로 나타내기 위하여 css로 submenu들을 일단 숨겨줌*/
+}
+.submenu li {}
+.submenu li a {
+    width:200px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    display:block;
+    background-color:#c8a7e6;
+    color:white;
+}
+.submenu li a:hover {
+    background-color:#cbb3e0;
+}
+/*imgslide*/
+#imgslide {
+    width:1200px;
+    height:300px;
+    background-color:#bbb
+}
+/*contents*/
+#contents {
+    width:1200px;
+    height:200px;
+    background-color:#ccc
+}
+/*footer*/
+footer {
+    width:1200px;
+    height:100px;
+    background-color:#ddd;
+}
+
+
+
+/*이미지 슬라이드 좌우 슬라이드*/
+#imgslide {
+    width: 100%;
+    height: 300px;
+    background: #bbb;
+    position: relative;    /*이미지들 상속시키기위한 포지션*/
+    overflow: hidden;    /*넘치는 사진들 숨기기*/
+}
+#imgslide a{
+    position: absolute;    /*위에 relative에 사진들을 상속시키기 위함*/
+    top: 0;    /*위 relative 사이즈(width:1200px, height:300px) 탑:0 위치에 배치*/    
+    left: 0;    /*위 relative 사이즈(width:1200px, height:300px) 왼쪽:0 위치에 배치*/    
+}
+#imgslide span{    /*이미지랑 같이 넘어가는 글씨 꾸미기*/
+    width: 400px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    background:rgba(100,100,100,0.7);
+    position: absolute;    /*위에 #imgslide a {absolute}에 상속*/
+    top: 50%;        /*위 사진 중심으로 위에서 50%*/
+    left: 50%;        /*위 사진 중심으로 왼쪽에서 50%*/
+    transform: translate(-50%,-50%); /*중앙정렬*/
+    border-radius:30px;    /*사각형 둥글게 만들*/
+    font-size: 30px;
+}

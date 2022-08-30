@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="hondimoyoung">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!--boxSlide-->
+    <!-- jQuery library (served from Google) : CDN 경로로 링크하는 방법...-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+    <!-- bxSlider Javascript file -->
+    <script src="../hondimoyoung/01 jquery_bxslider/jquery.bxslider.min.js"></script>
+
+    <!-- bxSlider CSS file -->
+    <link href="../hondimoyoung/01 jquery_bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: "horizontal",
+                pager: false,
+                slideWidth: 1900, // slide 박스 비율
+                minSlides: 1, // slide 박스안의 나열될 최소 콘텐츠수
+                maxSlides: 1, // slide 박스안의 나열될 최대 콘텐츠수
+                slideMargin: 0, // slide 콘텐츠 사이간격(상대적)
+                auto: true, // 이미지 자동 슬라이드 유무
+                pause: 3000, // 딜레이 시간 (1000 = 1초)
+                autoHover: false   // 마우스오버時 스크롤 정지여부
+            });
+        });
+
+    </script>
+    </script>
+
+
+    <!--웹폰트-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div class="menu">
+            <ul class="oper">
+                <li><a href=#s1 class="fromLeft">OVERVIWE</a></li>
+                <li><a href=#keyWord class="fromLeft">KEYWORD</a></li>
+                <li><a href=#concept class="fromLeft">SIGNATURE LOGO AND COLOR</a></li>
+                <li><a href=#site class="fromLeft">Hondimoyoung SITE</a></li>
+            </ul>
+
+
+        </div>
+
+        <!--박스 슬라이드-->
+        <section class="title">
+            <div class="box">
+                <div class="slider">
+                    <div class=""><img src="../hondimoyoung/hondiimg/top/jeju.jpg"></div>
+                    <div class=""><img src="../hondimoyoung/hondiimg/top/logo.jpg"></div>
+                </div>
+            </div>
+
+        </section>
+        <!--박스 슬라이드 끝-->
+
+        <!--오버뷰-->
+        <article class="overView" id="s1">
+            <P class="over">01 OVERVIEW</P>
+            <p class="text">
+                제가 제주를 거주할 당시에 저는 늘 무언가를 배우고 싶어했습니다.<br>
+                하여 제주에 스터디모임이나 각종 모임을 찾아 보았는데 제주의 특성<br>
+                스터디나 모임이 잘 활성화 되어있지 않은 면모를 보아서 아쉬움이 남아<br>
+                제주의 모임이나 스터디 문화가 더욱더 활성화 되길 염원하며<br>
+                이번 혼디모여 프로젝트를 진행하게 되었습니다.<br>
+            </p>
+            <img id="hondImg" src="../hondimoyoung/hondiimg/overview/overLogo.png">
+        </article>
+        <!--오버뷰 끝-->
+
+        <!--키워드 시작-->
+        <section id="keyWord">
+            <P class="keyFont">02 KEYWORD</P>
+
+
+            <!--왼쪽 서클-->
+            <div class="word_Sec">
+                <div id="circle1">
+                    <p style="margin-top: 45px; font-size: 34px;">한 데 모이다</p>
+                </div>
+                <div id="circle2">
+                    <p style="margin-top: 45px; font-size: 34px;">제주방언</p>
+                </div>
+                <div id="circle3">
+                    <p style="margin-top: 45px; font-size: 34px;">혼디모영</p>
+                </div>
+            </div>
+            <!--왼쪽 서클 끝-->
+
+            <!--미들 서클-->
+            <div class="word_Sec2">
+                <div id="circle1_M">
+                    <p style="margin-top: 45px; font-size: 34px;">제주</p>
+                </div>
+                <div id="circle2_M">
+                    <p style="margin-top: 45px; font-size: 34px;">SIGNATUER</p>
+                </div>
+                <div id="circle3_M">
+                    <p style="margin-top: 45px; font-size: 34px;">한라산</p>
+                </div>
+            </div>
+            <!--미들 서클 끝-->
+
+            <!--오른쪽 서클 시작-->
+            <div class="word_Sec3">
+                <div id="circle1_R">
+                    <p style="margin-top: 45px; font-size: 34px;">모임</p>
+                </div>
+                <div id="circle2_R">
+                    <p style="margin-top: 45px; font-size: 34px;">부르다</p>
+                </div>
+                <div id="circle3_R">
+                    <p style="margin-top: 45px; font-size: 34px;">확성기</p>
+                </div>
+            </div>
+
+
+            <!--오른쪽 서클 끝-->
+
+        </section>
+        <!--키워드 끝-->
+
+        <!-- 시그니쳐 -->
+        <section id="concept">
+            <p class="c_font">03 SIGNATUER LOGO AND COLOR</p>
+
+            <div id="imgWrap">
+                <img class="s_logo" src="../hondimoyoung/hondiimg/logo/SigNature.png">
+            </div>
+
+            <!--color-->
+            <article class="colorWrap">
+                <div id="c_hover">
+                    <p class="font_c">1a81c4</p>
+                </div>
+
+                <div id="c_hoverM">
+                    <p class="font_c">#056738</p>
+                </div>
+
+                <div id="c_hoverR">
+                    <p class="font_c">#c9dff2</p>
+                </div>
+            </article>
+            <!--color End-->
+
+        </section>
+
+        <!-- 시그니쳐 끝 -->
+
+        <section class="site" id="site">
+            <p class="s_font">04 hondimoyoung Site</p>
+
+            <div class="hondiSite">
+                <p class="visi"><a href="../site/hondimoyungSite.html">Click me</a></p>
+                <img class="visited" src="../hondimoyoung/hondiimg/site/site.jpg">
+
+            </div>
+
+            <a href="../../../index.html">
+                <p class="back">Back To FrontPage</p>
+            </a>
+
+
+        </section>
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
