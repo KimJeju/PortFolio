@@ -75,6 +75,9 @@ document.getElementById('firstDot').addEventListener('click', currentImageSlide.
 document.getElementById('secondDot').addEventListener('click', currentImageSlide.bind(null,2));
 document.getElementById('thirdDot').addEventListener('click', currentImageSlide.bind(null,3));
 document.getElementById('forthDot').addEventListener('click', currentImageSlide.bind(null,4));
+document.getElementById('fiveDot').addEventListener('click', currentImageSlide.bind(null,5));
+document.getElementById('sixDot').addEventListener('click', currentImageSlide.bind(null,6));
+
 
 
 /* PORTFOLIO AREA */
@@ -160,11 +163,11 @@ function reviewSlideTimer() {
   plusReviewSlides(1);
 }
 
-var reviewTimer = setInterval(reviewSlideTimer, 3000);
+var reviewTimer = setInterval(reviewSlideTimer, 500000);
 
 function plusReviewSlides(n) {
   clearInterval(reviewTimer);
-  reviewTimer = setInterval(reviewSlideTimer, 3000);
+  reviewTimer = setInterval(reviewSlideTimer, 500000);
   showReviewSlides(reviewSlideIndex += n);
 }
 
@@ -196,3 +199,18 @@ function showReviewSlides(n) {
 
 document.getElementById('reviewPrev').addEventListener('click', plusReviewSlides.bind(null,-1));
 document.getElementById('reviewNext').addEventListener('click', plusReviewSlides.bind(null,1));
+
+/* ANCHOR */
+function moveTo(id) {
+  if(id == 'brand'){
+    window.scrollTo(0, 0);
+  } else {
+    window.scrollTo(0, document.getElementById(id).offsetTop - 70);
+  }
+  document.getElementById('menu').classList.remove('show');
+}
+
+document.getElementById('navbarAbout').addEventListener('click', moveTo.bind(null,'about'));
+document.getElementById('navbarService').addEventListener('click', moveTo.bind(null,'service'));
+document.getElementById('navbarPortfolio').addEventListener('click', moveTo.bind(null,'portfolio'));
+document.getElementById('navbarReview').addEventListener('click', moveTo.bind(null,'review'));

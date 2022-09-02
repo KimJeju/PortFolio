@@ -32,7 +32,6 @@ a {
 ul {
     list-style-type: none;
 }
-
 /* HEADER */
 .header-area {
     position: relative;
@@ -103,19 +102,12 @@ ul {
     line-height: 70px;
     font-size: 32px;
     cursor: pointer;
-    transition:0.5s;
-}
-
-.header-area > .navbar > .navbar-toggler:hover {
-    color: rgb(162, 162, 162);
 }
 
 @media(min-width: 992px) {
     .header-area > .navbar > .navbar-toggler {
         display: none;
     }
-
-   
 }
 
 .header-area > .navbar > .navbar-menu {
@@ -129,37 +121,38 @@ ul {
     overflow: hidden;
 }
 
-
-
 .header-area > .navbar > .navbar-menu.show {
     height: 200px;
 }
-
-.header-area > .navbar > .navbar-brand > i {
-   font-size:45px;
-   color: #777;
-   margin-top:13%;
-   transition:0.5s;
-   color: mediumslateblue;
-
-}
-
-.header-area > .navbar > .navbar-brand > i:hover {
-    color:rgb(104, 43, 128);
-}
-
 
 .header-area > .navbar > .navbar-menu > .nav-item {
     float: none;
     display: block;
     height: 50px;
     line-height: 50px;
-    border-bottom: solid 0px rgb(168, 168, 168);
-    transition: 0.5s;
 }
 
 .header-area > .navbar > .navbar-menu > .nav-item:hover * {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header-area > .navbar > .navbar-brand > i {
+    font-size:45px;
+    color: #777;
+    margin-top:13%;
+    transition:0.5s;
+    color: mediumslateblue;
+ 
+ }
+ 
+ .header-area > .navbar > .navbar-brand > i:hover {
+     color:rgb(104, 43, 128);
+ }
+
+.section-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .header-area > .navbar > .navbar-menu > .nav-item > .nav-link {
@@ -167,9 +160,7 @@ ul {
     padding-left: 50px;
     color: white;
     cursor: pointer;
-  
 }
-
 
 @media (min-width: 992px) {
     .header-area > .navbar > .navbar-menu {
@@ -181,7 +172,6 @@ ul {
         height: auto;
         transition: none;
     }
-}
 
     .header-area > .navbar > .navbar-menu.show {
         height: auto;
@@ -202,15 +192,12 @@ ul {
         padding: 0 20px;
         color: black;
     }
+}
 
 
 /* SECTONE CONTAINER */
 
-.section-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
+
 
 
 /* WELCOME AREA */
@@ -482,6 +469,9 @@ section {
 
 .portfolio-area {
     height: auto;
+    position: relative;
+    box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.3);
+
 }
 
 .portfolio-area > .filter > .list {
@@ -666,7 +656,7 @@ portfolio-area > .filter > .list > .listItem.active {
     background-color: white;
     margin: 20px;
     padding: 40px;
-
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 992px) {
