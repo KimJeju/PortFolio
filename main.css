@@ -260,7 +260,7 @@ ul {
 
 .welcome-area > .container > .dots > .dot.active,
 .welcome-area > .container > .dots > .dot:hover {
-    background-attachment: #ddd;
+    background-color: #ddd;
 }
 
 .welcome-area > .container > .fade {
