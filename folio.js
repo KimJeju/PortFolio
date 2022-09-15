@@ -77,6 +77,8 @@ document.getElementById('thirdDot').addEventListener('click', currentImageSlide.
 document.getElementById('forthDot').addEventListener('click', currentImageSlide.bind(null,4));
 document.getElementById('fiveDot').addEventListener('click', currentImageSlide.bind(null,5));
 document.getElementById('sixDot').addEventListener('click', currentImageSlide.bind(null,6));
+document.getElementById('sevenDot').addEventListener('click', currentImageSlide.bind(null,7));
+
 
 
 
